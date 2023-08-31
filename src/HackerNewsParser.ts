@@ -51,7 +51,7 @@ export default class HackerNewsParser {
             this.targetChannel.send("hackernews points system changed!");
         else {
             this.targetChannel.send(
-                `(${max.value} points) [${max.map[0]}](${max.map[1][0]})`
+                `Top article on hackernews: (${max.value} points) [${max.map[0]}](${max.map[1][0]})`
             );
             this.displayedMap.set(max.map[0], max.map[1]);
         }
